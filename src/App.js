@@ -15,13 +15,13 @@ function App() {
       const hasCountryData = data.country && data.country.length
       const nationalities =  hasCountryData ? data.country : [];
       setNationalities(nationalities);
-          
-      const message = hasCountryData ? `${data.country.length} guess(es) found` : 'No nationality match found';
+
+      const message = hasCountryData ? `${data.country.length} guess(es) found!` : 'No nationality match found';
       setMessage(message);
     } catch (err) {
       console.log(`err: ${err.message}`);
       errorInFetch = true;
-      setNationalities([]);      
+      setNationalities([]);
       setMessage('Could not fetch nationalities, try again later.');
     }
 
@@ -69,7 +69,7 @@ function App() {
               }
             )}
           </div>
-        </div>        
+        </div>
       </header>
     </div>
   );
