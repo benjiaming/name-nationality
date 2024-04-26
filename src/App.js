@@ -50,7 +50,7 @@ function App() {
                 type="text"
                 onChange={(e) => setPersonName(e.target.value)}
                 value={personName}
-                placeholder="Enter a person's name please"
+                placeholder="Enter someone's name"
               />
               <button onClick={handleSubmit}>Get Nationalities</button>
             </form>
